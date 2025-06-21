@@ -50,7 +50,9 @@ def listen():
                 print("\r", end="",flush=True)
 
             os.system("cls" if os.name == "nt" else "clear")
+            
             # threading part
+
             listen_thread = threading.Thread(target=listen)
             print_thread = threading.Thread(target=print_loop)
 
