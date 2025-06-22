@@ -25,7 +25,7 @@ def listen():
     recognizer.dynamic_energy_adjustment_damping = 0.03
     recognizer.dynamic_energy_ratio = 1.9
     recognizer.pause_threshold = 0.4
-    recognizer.operation_timeout = None
+    recognizer.operation_timeout = 1
     recognizer.pause_threshold = 0.2
     recognizer.non_speaking_duration = 0.1
 
