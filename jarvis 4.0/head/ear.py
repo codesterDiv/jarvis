@@ -9,7 +9,7 @@ init(autoreset=True)
 
 def print_loop():
     while True:
-        print(Fore.LIGHTBLUE_EX + "I am listening...", end="", flush=True)
+        print(Fore.LIGHTBLUE_EX + "I am listening...",end="",flush=True)
         print(Style.RESET_ALL, end="", flush=True)
         print("", end="", flush=True)
 
@@ -25,7 +25,7 @@ def listen():
     recognizer.dynamic_energy_adjustment_damping = 0.03
     recognizer.dynamic_energy_ratio = 1.9
     recognizer.pause_threshold = 0.4
-    recognizer.operation_timeout = 1
+    recognizer.operation_timeout = None
     recognizer.pause_threshold = 0.2
     recognizer.non_speaking_duration = 0.1
 
@@ -61,3 +61,12 @@ def listen():
 
             listen_thread.join()
             print_thread.join()
+
+
+
+
+
+
+
+
+listen()  # Start listening
