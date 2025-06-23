@@ -122,7 +122,7 @@ def speak(TEXT):
         play_thread.join()
 
     # Clean up the file
-    remove_file(output_file)
+    # remove_file(output_file)
 
 
 listen()
